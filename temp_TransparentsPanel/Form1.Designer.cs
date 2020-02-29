@@ -28,7 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.pBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox)).BeginInit();
             this.SuspendLayout();
+            // 
+            // pBox
+            // 
+            this.pBox.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pBox.Location = new System.Drawing.Point(23, 12);
+            this.pBox.Name = "pBox";
+            this.pBox.Size = new System.Drawing.Size(464, 316);
+            this.pBox.TabIndex = 0;
+            this.pBox.TabStop = false;
+            this.pBox.Click += new System.EventHandler(this.pBox_Click);
             // 
             // form
             // 
@@ -36,14 +48,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(513, 441);
+            this.Controls.Add(this.pBox);
             this.Name = "form";
             this.Text = "Form1";
-            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.form_MouseClick);
+            ((System.ComponentModel.ISupportInitialize)(this.pBox)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox pBox;
     }
 }
 

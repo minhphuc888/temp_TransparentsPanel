@@ -11,9 +11,9 @@ namespace temp_TransparentsPanel
             InitializeComponent();
         }
 
-        private void form_MouseClick(object sender, MouseEventArgs e)
+        private void pBox_Click(object sender, EventArgs e)
         {
-            Rectangle rc = RectangleDrawer.Draw(this);
+            Rectangle rc = RectangleDrawer.Draw(pBox);
             Console.WriteLine(rc.ToString());
         }
     }
